@@ -1,7 +1,7 @@
 const env = {
-    database: 'testdb',
-    username: 'root',
-    password: 'toor',
+    database: 'heroku_5691b731364aa3a',
+    username: 'b376c1a030f581',
+    password: '94bc6149',
     host: 'localhost',
     dialect: 'mysql',
     pool: {
