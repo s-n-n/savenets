@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "server",
-  "main": "server",
+  "main": "server.js",
   "scripts": {
-    "start": "./server.js",
+    "start": "node server.js"
   },
   "author": "snn",
   "license": "ISC",
