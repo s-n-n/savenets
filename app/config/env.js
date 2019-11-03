@@ -2,7 +2,7 @@ const env = {
     database: 'heroku_deb8f2418aef4e6',
     username: 'b376c1a030f581',
     password: 'b4a714dd',
-    host: 'localhost',
+    host: 'savenets.herokuapp.com',
     dialect: 'mysql',
     pool: {
         max: 5,
