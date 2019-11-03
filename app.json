@@ -1,6 +1,8 @@
 {
-  "name": "snn",
-  "description": "snn",
+  "name": "meetme server",
+  "description": "savenets corp.",
   "repository": "https://github.com/s-n-n/savenets",
-  "keywords": ["node", "express", "static"]
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
 }
