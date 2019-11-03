@@ -1,7 +1,6 @@
 {
-  "name": "Node.js Sample",
-  "description": "A barebones Node.js app using Express",
+  "name": "snn",
+  "description": "snn",
   "repository": "https://github.com/s-n-n/savenets",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["node", "express", "static"]
 }
