@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 // origin: 'http://192.168.1.47:4200',
 const cors = require('cors')
 const corsOptions = {
-    origin: 'http://localhost:4200',
+    origin: '*',
     credentials: true,
     optionsSuccessStatus: 200
 }
