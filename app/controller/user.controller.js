@@ -25,11 +25,9 @@ exports.login = (req, res, next) => {
 
 // user logout
 exports.logout = (req, res) => {
-    // req.logout()
-    // return res.send()
-    req.session.destroy(function (err) {
-        res.redirect('/'); //Inside a callback… bulletproof!
-    });
+    req.session.destroy()
+    req.logout()
+    return res.send()
 }
 
 // get users account
