@@ -7,10 +7,13 @@ app.use(bodyParser.json())
 
 // cors
 // origin: 'http://192.168.1.47:4200',
+// corsOptions.origin = req.headers.origin;
+
+
 const cors = require('cors')
 let corsOptions = {
-    //origin: 'http://localhost:42001',
-    // corsOptions.origin = req.headers.origin;
+    //origin: 'http://localhost:4200',
+    origin: 'http://192.168.1.47:4200',
     credentials: true,
     optionsSuccessStatus: 200
 }
@@ -29,7 +32,7 @@ const passport = require('passport')
 app.use(passport.initialize())
 app.use(passport.session())
 const authMiddleware = (req, res, next) => {
-    corsOptions.origin = req.headers.origin
+    // corsOptions.origin = req.headers.origin
     console.log(corsOptions);
     if (!req.isAuthenticated()) {
         res.status(401).send('You are not authenticated')
