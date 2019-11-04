@@ -25,8 +25,11 @@ exports.login = (req, res, next) => {
 
 // user logout
 exports.logout = (req, res) => {
-    req.logout()
-    return res.send()
+    // req.logout()
+    // return res.send()
+    req.session.destroy(function (err) {
+        res.redirect('/'); //Inside a callback… bulletproof!
+    });
 }
 
 // get users account
