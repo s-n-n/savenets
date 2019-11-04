@@ -46,7 +46,7 @@ require('./app/route/user.route.js')(app, authMiddleware)
 require('./app/route/pigeon.route.js')(app, authMiddleware)
 
 // Create a Server
-const server = app.listen(8080, function () {
+const server = app.listen(process.env.PORT, function () {
 
     const host = server.address().address
     const port = server.address().port
