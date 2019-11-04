@@ -6,9 +6,10 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
 // cors
+// origin: 'http://192.168.1.47:4200',
 const cors = require('cors')
 const corsOptions = {
-    origin: 'http://192.168.1.47:4200',
+    origin: 'http://localhost:4200',
     credentials: true,
     optionsSuccessStatus: 200
 }
