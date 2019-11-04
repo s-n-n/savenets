@@ -25,7 +25,7 @@ exports.login = (req, res, next) => {
 
 // user logout
 exports.logout = (req, res) => {
-    req.session.destroy()
+    // req.session.destroy()
     req.logout()
     return res.send()
 }
